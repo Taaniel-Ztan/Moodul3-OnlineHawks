@@ -1,0 +1,465 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 1080px;
+    overflow-x: hidden; /* Väldi horisontaalset kerimist */
+    font-family: 'Poppins', sans-serif; /* Määra font-family */
+    
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* See hoiab pildi proportsioonid ja täidab kogu ala */
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index:0; /* Määrame hero image'i z-indeksiks 1 */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.49); /* Musta värvi overlay 29% läbipaistvusega */
+    z-index: 1; /* Määrame overlay z-indeksiks 2 */
+}
+
+.logo {
+    position: absolute;
+    top: 67px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 64px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 63px; /* Määra logo laius */
+    height: auto; /* Säilita proportsioonid */
+    max-width: 63px; /* Kindlusta maksimaalne laius */
+    max-height: 66px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+
+}
+
+.buttons {
+    position: absolute;
+    top: 20px; /* Muuda vastavalt soovile */
+    left: 20px; /* Muuda vastavalt soovile */
+    z-index: 4; /* Määrame nuppude z-indeksiks 4, et need oleksid kõigi teiste elementide ees */
+}
+
+.button-1 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 151px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+
+.button-2 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 210px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-3 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 273px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-4 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 335px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-5 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 390px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-6 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 457px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+.button-7 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 510px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.line {
+    position: absolute;
+    top: 62px; /* Määrame Y-positsiooni */
+    left: 130px; /* Määrame X-positsiooni */
+    height: 79px; /* Määrame kõrguse */
+    width: 2px; /* Määrame joone paksuse */
+    background-color: white; /* Määrame värvi */
+    z-index: 5; /* Määrame joone z-indeksiks 5, et see oleks kõigi teiste elementide ees */
+}
+
+.footer {
+    width: 100%;
+    height: 558px;
+    object-fit: cover; /* See hoiab pildi proportsioonid ja täidab kogu ala */
+    position: absolute;
+    top: 850px;
+    left: 0;
+    z-index: 2; /* Määrame hero image'i z-indeksiks 1 */
+}
+
+.buttons-footer {
+    position: absolute;
+    top: 20px; /* Muuda vastavalt soovile */
+    left: 20px; /* Muuda vastavalt soovile */
+    z-index: 4; /* Määrame nuppude z-indeksiks 4, et need oleksid kõigi teiste elementide ees */
+}
+
+.footer-fanshop {
+    position: absolute;
+    top: 950px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 20px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-about {
+    position: absolute;
+    top: 950px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-achivements {
+    position: absolute;
+    top: 980px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-matches {
+    position: absolute;
+    top: 1010px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-games {
+    position: absolute;
+    top: 1040px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-team {
+    position: absolute;
+    top: 1070px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-store {
+    position: absolute;
+    top: 900px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 55px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-onlinehawks {
+    position: absolute;
+    top: 900px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 150px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-contact {
+    position: absolute;
+    top: 900px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 350px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-contactemail {
+    position: absolute;
+    top: 960px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 350px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+.footer-contactaddress {
+    position: absolute;
+    top: 990px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 350px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.product-container {
+    top: 25%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 10;
+}
+
+.product-card {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.99);
+    margin: 0 20px 20px 0; /* Lisame marginit paremale ja alla */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all 0.3s ease; /* Lisame üleminekuefekti */
+}
+
+.product-card:hover {
+    opacity: 1; /* Vähendame toote läbipaistvust hiirega hõlvamisel */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.product-container:hover .product-card:not(:hover) {
+    opacity: 0.3; /* Muudame teiste toodete läbipaistvust hiirega hõlvamisel */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+.filter-container {
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 11%;
+    grid-template-columns: auto auto; /* Kaks veergu, automaatne laius */
+    grid-gap: 10px; /* Vahe kahe elemendi vahel */
+    align-items: center; /* Keskjoondus vertikaalselt */
+    
+}
+
+.filter-container-price {
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 20%;
+    grid-template-columns: auto auto; /* Kaks veergu, automaatne laius */
+    grid-gap: 10px; /* Vahe kahe elemendi vahel */
+    align-items: center; /* Keskjoondus vertikaalselt */
+    
+}
+
+#category-select,
+#price-select {
+
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid red; /* Lisa punane piirjoon */
+    border-radius: 5px; /* Ümarad nurgad */
+    background-color: transparent; /* Läbipaistev taust */
+    color: rgb(247, 0, 0); /* Valge tekst */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Punane glow effect */
+    margin-right: 10px;
+}
+
+/* Hover efekt */
+#category-select:hover,
+#price-select:hover {
+    border-color: rgb(255, 255, 255); /* Muuda piirjoone värv tumepunaseks hoveri ajal */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); /* Tugevam glow effect hoveri ajal */
+}
+
+
+@media (min-width: 1200px) {
+    .hero-image {
+        height: 90vh;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero-image {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 50vh;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hawks Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/store.css">
+</head>
+
+<body>
+    <div class="line"></div>
+    <a href="index.html"><img src="Images/logo.png" alt="Logo" class="logo"></a>
+    <img src="Images/hero.png" alt="Hero Image" class="hero-image">
+    <div class="overlay"></div>
+    <div class="buttons">
+        <button class="button button-1">Home</button>
+        <button class="button button-2">Team</button>
+        <button class="button button-3">About</button>
+        <button class="button button-4">Store</button>
+        <button class="button button-5">Contact</button>
+        <button class="button button-6">Login</button>
+        <button class="button button-7">Signup</button>
+    </div>
+
+    <img src="Images/footer.png" alt="footer" class="footer">
+
+    <h1 class="footer-store">Store</h1>
+    <h1 class="footer-onlinehawks">Online Hawks</h1>
+    <h1 class="footer-contact">Contact Us</h1>
+    <h1 class="footer-contactemail">onlinehawks@email.com</h1>
+    <h1 class="footer-contactaddress">UK, London, Carnaby Street, 355</h1>
+
+    <div class="buttons-footer">
+        <a href="index.html"><button class="button button-1">Home</button></a>
+        <a href="team.html"><button class="button button-2">Team</button></a>
+        <a href="about.html"></a><button class="button button-3">About</button></a>
+        <a href="store.html"><button class="button button-4">Store</button></a>
+        <a href="contact.html"><button class="button button-5">Contact</button></a>
+        <a href="login.html"><button class="button button-6">Login</button></a>
+        <a href="signup.html"><button class="button button-7">Signup</button></a>
+    </div>
+
+    <div class="filter-container">
+        <label for="category-select"></label>
+        <select id="category-select">
+            <option value="all">All categories</option>
+            <option value="jersey">Jerseys</option>
+            <option value="hoodie">Hoodies</option>
+            <option value="cap">Caps</option>
+
+        </select>
+    </div>
+
+    <div class="filter-container-price">
+        <label for="price-select"></label>
+        <select id="price-select">
+            <option value="all">All prices</option>
+            <option value="0-50">$0 - $50</option>
+            <option value="51-100">$51 - $100</option>
+            <option value="101-200">$101 - $200</option>
+        </select>
+    </div>
+
+    <div class="product-container">
+        <a href="product.html">
+        <div class="product-card" data-category="jersey" value="jersey">
+            <img src="Images/captain.png" alt="Product 1" class="product-image">
+            <div class="product-details">
+                <div class="product-color"></div>
+            </a>
+                <h2 class="product-name">Online Hawks Jersey</h2>
+                <p class="product-price">$49.00</p>
+            </div>
+        
+        </div>
+        <a href="product1.html">
+        <div class="product-card" data-category="hoodie" value="hoodie">
+            <img src="Images/coach.png" alt="Product 1" class="product-image">
+            <div class="product-details">
+                <div class="product-color"></div>
+            </a>
+                <h2 class="product-name">Online Hawks Hoodie</h2>
+                <p class="product-price">$65.00</p>
+            </div>
+        </div>
+        <a href="product2.html">
+        <div class="product-card" data-category="cap" value="cap">
+            <img src="Images/member.png" alt="Product 1" class="product-image">
+            <div class="product-details">
+                <div class="product-color"></div>
+            </a>
+                <h2 class="product-name">Online Hawks Cap</h2>
+                <p class="product-price">$25.00</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="JS/store.js"></script>
+
+</body>
+
+</html>

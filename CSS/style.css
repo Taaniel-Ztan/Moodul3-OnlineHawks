@@ -1,0 +1,1259 @@
+/* style.css */
+
+/* Väldi horisontaalset kerimist */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 7200px;
+    overflow-x: hidden; /* Väldi horisontaalset kerimist */
+    font-family: 'Poppins', sans-serif; /* Määra font-family */
+    
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Või määrake soovitud kõrgus */
+    overflow: hidden; /* Väldi horisontaalset kerimist hero konteineris */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* See hoiab pildi proportsioonid ja täidab kogu ala */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Määrame hero image'i z-indeksiks 1 */
+}
+
+.footer {
+    width: 100%;
+    height: 558px;
+    object-fit: cover; /* See hoiab pildi proportsioonid ja täidab kogu ala */
+    position: absolute;
+    top: 7100px;
+    left: 0;
+    z-index: 2; /* Määrame hero image'i z-indeksiks 1 */
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.29); /* Musta värvi overlay 29% läbipaistvusega */
+    z-index: 2; /* Määrame overlay z-indeksiks 2 */
+}
+
+.logo {
+    position: absolute;
+    top: 67px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 64px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 63px; /* Määra logo laius */
+    height: auto; /* Säilita proportsioonid */
+    max-width: 63px; /* Kindlusta maksimaalne laius */
+    max-height: 66px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.teamlogo {
+    position: absolute;
+    top: 4600px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 32px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 125px; /* Määra logo laius */
+    height: 180; /* Säilita proportsioonid */
+    max-width: 125px; /* Kindlusta maksimaalne laius */
+    max-height: 180px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.teamlogo1 {
+    position: absolute;
+    top: 4600px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 650px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 125px; /* Määra logo laius */
+    height: 180; /* Säilita proportsioonid */
+    max-width: 125px; /* Kindlusta maksimaalne laius */
+    max-height: 180px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.teamlogo2 {
+    position: absolute;
+    top: 4600px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 1260px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 125px; /* Määra logo laius */
+    height: 180; /* Säilita proportsioonid */
+    max-width: 125px; /* Kindlusta maksimaalne laius */
+    max-height: 180px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.fazelogo {
+    position: absolute;
+    top: 4630px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 210px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 195px; /* Määra logo laius */
+    height: 131; /* Säilita proportsioonid */
+    max-width: 195px; /* Kindlusta maksimaalne laius */
+    max-height: 131px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.navilogo {
+    position: absolute;
+    top: 4630px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 870px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 195px; /* Määra logo laius */
+    height: 131; /* Säilita proportsioonid */
+    max-width: 195px; /* Kindlusta maksimaalne laius */
+    max-height: 131px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.cloud9logo {
+    position: absolute;
+    top: 4595px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 1440px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 200px; /* Määra logo laius */
+    height: 200; /* Säilita proportsioonid */
+    max-width: 200px; /* Kindlusta maksimaalne laius */
+    max-height: 200px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.title-rise-above {
+    position: absolute;
+    top: 250px; /* Muuda vastavalt soovile */
+    left: 603px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color: white; /* Värv */
+    z-index: 4; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-the-rest {
+    position: absolute;
+    top: 370px; /* Muuda vastavalt soovile */
+    left: 691px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color: white; /* Värv */
+    z-index: 4; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.buttons {
+    position: absolute;
+    top: 20px; /* Muuda vastavalt soovile */
+    left: 20px; /* Muuda vastavalt soovile */
+    z-index: 4; /* Määrame nuppude z-indeksiks 4, et need oleksid kõigi teiste elementide ees */
+}
+
+.buttons-footer {
+    position: absolute;
+    top: 20px; /* Muuda vastavalt soovile */
+    left: 20px; /* Muuda vastavalt soovile */
+    z-index: 4; /* Määrame nuppude z-indeksiks 4, et need oleksid kõigi teiste elementide ees */
+}
+
+.footer-fanshop {
+    position: absolute;
+    top: 7200px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 20px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-about {
+    position: absolute;
+    top: 7200px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-achivements {
+    position: absolute;
+    top: 7230px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-matches {
+    position: absolute;
+    top: 7260px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-games {
+    position: absolute;
+    top: 7290px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.footer-team {
+    position: absolute;
+    top: 7320px; /* Muuda vastavalt soovile */
+    left: 130px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+    z-index:5;
+}
+
+.button-1 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 151px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+
+.button-2 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 210px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-3 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 273px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-4 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 335px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-5 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 390px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-6 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 457px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+.button-7 {
+    position: absolute;
+    top: 67px; /* Muuda vastavalt soovile */
+    left: 510px; /* Muuda vastavalt soovile */
+    background-color: transparent; /* Nupu taustavärv on läbipaistev */
+    border: none; /* Eemaldame nupu piirjoone */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: normal; /* Tavaline font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemaldame focus state'i stiili */
+    padding: 0; /* Eemaldame nupu polstri */
+    margin-right: 10px; /* Vajadusel lisame nuppude vahele marginit */
+}
+
+.button-read-more {
+    position: absolute; /* Määra positsioon absoluutseks */
+    top: 615px; /* Muuda vastavalt soovile */
+    left: 815px; /* Muuda vastavalt soovile */
+    width: 189px; /* Määra laius */
+    height: 50px; /* Määra kõrgus */
+    background-color: #FF0000; /* Punane taustavärv */
+    border: none; /* Eemalda piirjoon */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: bold; /* Paks font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemalda fookuse stiil */
+    padding: 0; /* Eemalda polster */
+    margin-right: 10px; /* Lisa vajadusel paremale marginaal */
+}
+
+.button-read-more-1 {
+    z-index: 4;
+    position: absolute; /* Määra positsioon absoluutseks */
+    top: 3950px; /* Muuda vastavalt soovile */
+    left: 815px; /* Muuda vastavalt soovile */
+    width: 189px; /* Määra laius */
+    height: 50px; /* Määra kõrgus */
+    background-color: #FF0000; /* Punane taustavärv */
+    border: none; /* Eemalda piirjoon */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: bold; /* Paks font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemalda fookuse stiil */
+    padding: 0; /* Eemalda polster */
+    margin-right: 10px; /* Lisa vajadusel paremale marginaal */
+}
+
+.button-read-more-2 {
+    z-index: 4;
+    position: absolute; /* Määra positsioon absoluutseks */
+    top: 5000px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    width: 189px; /* Määra laius */
+    height: 50px; /* Määra kõrgus */
+    background-color: #FF0000; /* Punane taustavärv */
+    border: none; /* Eemalda piirjoon */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: bold; /* Paks font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemalda fookuse stiil */
+    padding: 0; /* Eemalda polster */
+    margin-right: 10px; /* Lisa vajadusel paremale marginaal */
+}
+
+.button-read-more-3 {
+    z-index: 4;
+    position: absolute; /* Määra positsioon absoluutseks */
+    top: 5000px; /* Muuda vastavalt soovile */
+    left: 650px; /* Muuda vastavalt soovile */
+    width: 189px; /* Määra laius */
+    height: 50px; /* Määra kõrgus */
+    background-color: #FF0000; /* Punane taustavärv */
+    border: none; /* Eemalda piirjoon */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: bold; /* Paks font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemalda fookuse stiil */
+    padding: 0; /* Eemalda polster */
+    margin-right: 10px; /* Lisa vajadusel paremale marginaal */
+}
+
+.button-read-more-4 {
+    z-index: 4;
+    position: absolute; /* Määra positsioon absoluutseks */
+    top: 5000px; /* Muuda vastavalt soovile */
+    left: 1260px; /* Muuda vastavalt soovile */
+    width: 189px; /* Määra laius */
+    height: 50px; /* Määra kõrgus */
+    background-color: #FF0000; /* Punane taustavärv */
+    border: none; /* Eemalda piirjoon */
+    font-family: 'Poppins', sans-serif; /* Font */
+    font-size: 12px; /* Fonti suurus */
+    font-weight: bold; /* Paks font */
+    color: white; /* Teksti värv */
+    cursor: pointer; /* Kursori stiil */
+    outline: none; /* Eemalda fookuse stiil */
+    padding: 0; /* Eemalda polster */
+    margin-right: 10px; /* Lisa vajadusel paremale marginaal */
+}
+
+
+
+.title-our-team {
+    position: absolute;
+    top: 900px; /* Muuda vastavalt soovile */
+    left: 32px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color:#BC2031; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-our-team-sub {
+    position: absolute;
+    top: 1120px; /* Muuda vastavalt soovile */
+    left: 32px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: normal; /* Tähtsus */
+    color:#a3a3a3; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-games {
+    position: absolute;
+    top: 2700px; /* Muuda vastavalt soovile */
+    left: 32px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color:#BC2031; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-games-sub {
+    position: absolute;
+    top: 2920px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: normal; /* Tähtsus */
+    color:#a3a3a3; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches {
+    position: absolute;
+    z-index:4;
+    top: 4100px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color:#BC2031; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-sub {
+    position: absolute;
+    z-index:4;
+    top: 4320px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: normal; /* Tähtsus */
+    color:#a3a3a3; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.titleshop {
+    position: absolute;
+    z-index:5;
+    top: 5500px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color: white; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.footerheading {
+    position: absolute;
+    z-index:5;
+    top: 7300px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 128px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color: white; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.titleshopsub {
+    position: absolute;
+    z-index:4;
+    top: 5730px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: normal; /* Tähtsus */
+    color:white; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-subdate {
+    position: absolute;
+    z-index:4;
+    top: 4520px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#a3a3a3; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-subdate1 {
+    position: absolute;
+    z-index:4;
+    top: 4520px; /* Muuda vastavalt soovile */
+    left: 650px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#a3a3a3; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-subdate2 {
+    position: absolute;
+    z-index:4;
+    top: 4520px; /* Muuda vastavalt soovile */
+    left: 1260px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#a3a3a3; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-subtext {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-subtext2 {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 265px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: BOLD; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-subtext3 {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 330px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-subbingtext {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 650px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-subbingtext2 {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 880px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: BOLD; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-subbingtext3 {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 940px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-subbedtext {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 1260px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-subbedtext2 {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 1500px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: BOLD; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+.title-matches-subbedtext3 {
+    position: absolute;
+    z-index:4;
+    top: 4780px; /* Muuda vastavalt soovile */
+    left: 1570px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-gametext {
+    position: absolute;
+    z-index:4;
+    top: 4900px; /* Muuda vastavalt soovile */
+    left: 35px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-gametext1 {
+    position: absolute;
+    z-index:4;
+    top: 4900px; /* Muuda vastavalt soovile */
+    left: 650px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-gametext2 {
+    position: absolute;
+    z-index:4;
+    top: 4900px; /* Muuda vastavalt soovile */
+    left: 1260px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: lighter; /* Tähtsus */
+    color:#000000; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+
+.title-matches-wintext {
+    position: absolute;
+    z-index:4;
+    top: 4820px; /* Muuda vastavalt soovile */
+    left: 480px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color:#08B219; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-win1text {
+    position: absolute;
+    z-index:4;
+    top: 4820px; /* Muuda vastavalt soovile */
+    left: 1690px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color:#08B219; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.title-matches-losetext {
+    position: absolute;
+    z-index:4;
+    top: 4820px; /* Muuda vastavalt soovile */
+    left: 1110px; /* Muuda vastavalt soovile */
+    font-size: 32px; /* Määra fondi suurus */
+    font-weight: bold; /* Tähtsus */
+    color: #bc2032; /* Värv */
+    z-index: 5; /* Määrame pealkirja z-indeksiks 4, et see oleks kõigi teiste elementide ees */
+}
+
+.line {
+    position: absolute;
+    top: 62px; /* Määrame Y-positsiooni */
+    left: 130px; /* Määrame X-positsiooni */
+    height: 79px; /* Määrame kõrguse */
+    width: 2px; /* Määrame joone paksuse */
+    background-color: white; /* Määrame värvi */
+    z-index: 5; /* Määrame joone z-indeksiks 5, et see oleks kõigi teiste elementide ees */
+}
+.winline {
+    position: absolute;
+    top: 4880px; /* Määrame Y-positsiooni */
+    left: 35px; /* Määrame X-positsiooni */
+    height: 5px; /* Määrame kõrguse */
+    width: 544px; /* Määrame joone paksuse */
+    background-color: #08B219; /* Määrame värvi */
+    z-index: 5; /* Määrame joone z-indeksiks 5, et see oleks kõigi teiste elementide ees */
+}
+
+.win1line {
+    position: absolute;
+    top: 4880px; /* Määrame Y-positsiooni */
+    left: 1260px; /* Määrame X-positsiooni */
+    height: 5px; /* Määrame kõrguse */
+    width: 544px; /* Määrame joone paksuse */
+    background-color: #08B219; /* Määrame värvi */
+    z-index: 5; /* Määrame joone z-indeksiks 5, et see oleks kõigi teiste elementide ees */
+}
+
+.loseline {
+    position: absolute;
+    top: 4880px; /* Määrame Y-positsiooni */
+    left: 650px; /* Määrame X-positsiooni */
+    height: 5px; /* Määrame kõrguse */
+    width: 544px; /* Määrame joone paksuse */
+    background-color: #bc2032; /* Määrame värvi */
+    z-index: 5; /* Määrame joone z-indeksiks 5, et see oleks kõigi teiste elementide ees */
+}
+
+.captain {
+    position: absolute;
+    top: 1350px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 34px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 578px; /* Määra logo laius */
+    height: 484px; /* Säilita proportsioonid */
+    max-width: 578px; /* Kindlusta maksimaalne laius */
+    max-height: 484px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.coach {
+    position: absolute;
+    top: 1350px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 646px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 578px; /* Määra logo laius */
+    height: 484px; /* Säilita proportsioonid */
+    max-width: 578px; /* Kindlusta maksimaalne laius */
+    max-height: 484px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.member {
+    position: absolute;
+    top: 1350px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 1260px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 578px; /* Määra logo laius */
+    height: 484px; /* Säilita proportsioonid */
+    max-width: 578px; /* Kindlusta maksimaalne laius */
+    max-height: 484px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.member1 {
+    position: absolute;
+    top: 2000px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 32px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 578px; /* Määra logo laius */
+    height: 484px; /* Säilita proportsioonid */
+    max-width: 578px; /* Kindlusta maksimaalne laius */
+    max-height: 484px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.member2 {
+    position: absolute;
+    top: 2000px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 646px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 578px; /* Määra logo laius */
+    height: 484px; /* Säilita proportsioonid */
+    max-width: 578px; /* Kindlusta maksimaalne laius */
+    max-height: 484px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.member3 {
+    position: absolute;
+    top: 2000px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 1260px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    width: 578px; /* Määra logo laius */
+    height: 484px; /* Säilita proportsioonid */
+    max-width: 578px; /* Kindlusta maksimaalne laius */
+    max-height: 484px; /* Kindlusta maksimaalne kõrgus */
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-store {
+    position: absolute;
+    top: 7150px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 55px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-onlinehawks {
+    position: absolute;
+    top: 7150px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 150px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-contact {
+    position: absolute;
+    top: 7150px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 350px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+.footer-contactemail {
+    position: absolute;
+    top: 7210px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 350px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 12px;
+    font-weight: normal;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+.footer-contactaddress {
+    position: absolute;
+    top: 7245px; /* Muudame Y-positsiooni vastavalt soovitud asukohale */
+    left: 350px; /* Muudame X-positsiooni vastavalt soovitud asukohale */
+    font-size: 12px;
+    font-weight: normal;
+    z-index: 3; /* Määrame logo z-indeksiks 3, et see oleks kõigi teiste elementide ees */
+    color: white;
+}
+
+
+#cap {
+    font-size:20px;
+    z-index: 4;
+    position: absolute;
+    left: 32px;
+    top: 1830px;
+    font-weight: bold;
+}
+#cap1 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 32px;
+    top: 1854px;
+    font-weight: normal;
+}
+
+#coa {
+    font-size:20px;
+    z-index: 4;
+    position: absolute;
+    left: 646px;
+    top: 1830px;
+    font-weight: bold;
+}
+#coa1 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 646px;
+    top: 1854px;
+    font-weight: normal;
+}
+
+#coa2 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 646px;
+    top: 1880px;
+    font-weight: normal;
+}
+
+#mem {
+    font-size:20px;
+    z-index: 4;
+    position: absolute;
+    left: 1260px;
+    top: 1830px;
+    font-weight: bold;
+}
+#memo {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 1260px;
+    top: 1854px;
+    font-weight: normal;
+
+}
+
+#memo2 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 1260px;
+    top: 1880px;
+    font-weight: normal;
+}
+#mem1 {
+    font-size:20px;
+    z-index: 4;
+    position: absolute;
+    left: 32px;
+    top: 2480px;
+    font-weight: bold;    
+}
+#mem1o {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 32px;
+    top: 2505px;
+    font-weight: normal;
+}
+
+#mem2o2 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 32px;
+    top: 2534px;
+    font-weight: normal;
+}
+
+#mem2o3 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 646px;
+    top: 2534px;
+    font-weight: normal;
+}
+
+#mem2 {
+    font-size:20px;
+    z-index: 4;
+    position: absolute;
+    left: 646px;
+    top: 2480px;
+    font-weight: bold;   
+}
+#mem2o {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 646px;
+    top: 2505px;
+    font-weight: normal;
+}
+#mem3 {
+    font-size:20px;
+    z-index: 4;
+    position: absolute;
+    left: 1260px;
+    top: 2480px;
+    font-weight: bold;  
+}
+#mem3o {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 1260px;
+    top: 2505px;
+    font-weight: normal;
+}
+
+#mem3o3 {
+    font-size:18px;
+    z-index: 4;
+    position: absolute;
+    left: 1260px;
+    top: 2534px;
+    font-weight: normal;
+}
+
+.vector {
+    position:absolute;
+    z-index: 2;
+}
+
+.footervector {
+    position:absolute;
+    z-index: 2;
+}
+
+.csgo {
+    position:absolute;
+    top: 3300px;
+    z-index:4;
+    left: 561px;
+    
+}
+
+.lol {
+    position:absolute;
+    top: 3355px;
+    z-index:4;
+    left: 35px;
+    
+}
+
+.fort {
+    position:absolute;
+    top: 3355px;
+    z-index:4;
+    left: 1272px;
+    
+}
+
+
+
+.red-rectangle {
+    position: absolute;
+    width: 1920px;
+    height: 1800px;
+    top:5500px;
+    background-color: #BC2031;
+    z-index: 2;
+}
+
+
+.title-shop, .title-shop-sub {
+    text-align: center;
+    color: rgb(14, 10, 10);
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    z-index: 5;
+}
+
+.title-shop {
+    position: absolute;
+    font-size: 128px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    z-index: 5;
+}
+
+.title-shop-sub {
+    position: absolute;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    z-index: 5;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top:30%;
+    z-index: 10;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    max-width: 575px;
+    max-height: 852px;
+}
+
+.carousel-item {
+    min-width: 575px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item .carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item.center .carousel-image {
+    width: 769px;
+    height: auto;
+}
+
+
+
+.item-info {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+}
+
+.color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.color-label {
+    margin-right: 10px;
+}
+
+.color-sample {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    top: -10%;
+    transform: translateY(-50%);
+}
+
+
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .hero-image {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .hero-image {
+        height: 30vh;
+    }
+}

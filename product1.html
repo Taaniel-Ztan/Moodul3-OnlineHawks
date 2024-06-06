@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hawks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/product.css">
+</head>
+
+<body>
+    
+    <h1 class="title title-product">Online Hawks Hoodie</h1>
+    <h1 class="title title-price">$65.00</h1>
+
+    <button class="button button-addtocart"  onclick="togglePopup()">ADD TO CART</button>
+    <div class="popup" id="popup">
+        <p class="popup-text">YOU MUST BE LOGGED IN!</p>
+      </div>
+
+    <img src="">
+
+    <div class="filter-container">
+        <label for="color-select"></label>
+        <select id="color-select">
+            <option value="black">COLOR: BLACK</option>
+            <option value="white">COLOR: WHITE</option>
+            <option value="red">COLOR: RED</option>
+            <option value="blue">COLOR: BLUE</option>
+
+        </select>
+    </div>
+
+    <div class="filter-container-size">
+        <label for="size-select"></label>
+        <select id="size-select">
+            <option value="s">SIZE: S</option>
+            <option value="m">SIZE: M</option>
+            <option value="l">SIZE: L</option>
+            <option value="xl">SIZE: XL</option>
+        </select>
+    </div>
+
+
+    <div class="line"></div>
+    <a href="index.html"> <img src="Images/logo.png" alt="Logo" class="logo"></a>
+    <img src="Images/hero.png" alt="Hero Image" class="hero-image">
+    <div class="overlay"></div>
+    <div class="buttons">
+        <a href="index.html"><button class="button button-1">Home</button></a>
+        <a href="team.html"><button class="button button-2">Team</button></a>
+        <a href="about.html"></a><button class="button button-3">About</button></a>
+        <a href="store.html"><button class="button button-4">Store</button></a>
+        <a href="contact.html"><button class="button button-5">Contact</button></a>
+        <a href="login.html"><button class="button button-6">Login</button></a>
+        <a href="signup.html"><button class="button button-7">Signup</button></a>     
+    </div>
+
+
+    <img src="Images/footer.png" alt="footer" class="footer">
+    
+    <h1 class="footer-store">Store</h1>
+    <h1 class="footer-onlinehawks">Online Hawks</h1>
+    <h1 class="footer-contact">Contact Us</h1>
+    <h1 class="footer-contactemail">onlinehawks@email.com</h1>
+    <h1 class="footer-contactaddress">UK, London, Carnaby Street, 355</h1>
+    
+    <div class="buttons-footer">
+        <button class="button footer-fanshop">Merch</button>
+        <button class="button footer-about">About</button>
+        <button class="button footer-achivements">Achivements</button>
+        <button class="button footer-matches">Matches</button>
+        <button class="button footer-games">Games</button>
+        <button class="button footer-team">Team</button>
+    </div>
+  <style>
+    /* Slideshow container */
+.slideshow-container {
+    width: 652px;
+    height: 652px;
+    top: 20%;
+    left: -28%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: 10;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.text{
+    position: absolute;
+    z-index: 10;
+    top: 85%;
+    left:-45%;
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Images/captain.png" style="width:100%">
+  <div class="text">White</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Images/member.png" style="width:100%">
+  <div class="text">BLACK</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Images/coach.png" style="width:100%">
+  <div class="text">RED</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+
+function togglePopup() {
+  var popup = document.getElementById("popup");
+  popup.classList.toggle("show");
+}
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+
+ 
+</body>
+
+</html>
